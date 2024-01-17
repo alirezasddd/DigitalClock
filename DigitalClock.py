@@ -3,14 +3,15 @@ import time
 
 window = Tk()
 window.title("digital clock")
-window.geometry("600x400")
+window.geometry("600x150")
 
 
 def clock():
-    hour = time.strftime("%H")
+    hour = time.strftime("%I")
     minute = time.strftime("%M")
     second = time.strftime("%S")
-    mytext = hour + ":" + minute + ":" + second
+    am_pm = time.strftime("%p")
+    mytext = hour + ":" + minute + ":" + second + "  " + am_pm
     mylabel.config(text=mytext)
     mylabel.after(1000, clock)
 
