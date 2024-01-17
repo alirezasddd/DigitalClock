@@ -17,7 +17,7 @@ def clock():
 
 
 mylabel = Label(window, text="", font=(
-    'arial', 72), fg="white", bg="blue")
+    'arial', 72), fg="silver", bg="black")
 mylabel.pack()
 
 clock()
